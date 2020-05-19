@@ -25,5 +25,12 @@ def output_array (array)
   end
 end
 
-def return_string_array
+def return_string_array (array)
+  counter = 0
+  new_array = []
+  while counter < array.length
+    new_array[counter] = array[counter].to_s
+    counter += 1
+  end
+  new_array
 end 
